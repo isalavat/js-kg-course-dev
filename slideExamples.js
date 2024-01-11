@@ -42,3 +42,47 @@ someVariable = "Бишкек" // Сап
 // Java тилиндеги статикалык типтештируу
 int numericVariable = 323
 
+let apples = "2";
+let oranges = "3";
+// экөө тең бинардык плюс операциясына чейин сандарга айлантылат
+alert( +apples + +oranges ); // 5                                     
+
+
+let asandynJashy = 5;
+let usondunJashy = 3;
+
+//  Boolean         1-операнд       2-операнд
+let asanChongbu = asandynJashy > usondunJashy;
+let asanUsonTenbi = asandynJashy == usondunJashy;
+console.log(asanChongbu); // true-чын
+console.log(asanUsonTenbi); // false-жалган
+
+let trafficLight = "жашыл";
+
+if (trafficLight == "жашыл") {
+  console.log("Жолдун аркы бетине отсо болот!");
+} else {
+  console.log("Жолдун аркы бетине отсо болбойт!");
+}
+
+let shart;
+let shart1;
+let shart2;
+
+if (shart) {
+  // 1-Инструкция
+}
+
+if (shart) {
+  // 1-Инструкция
+} else {
+  // 2-Инструкция
+}
+
+if (shart1) {
+  // 1-Инструкция
+} else if (shart2) {
+  // 2-Инструкция
+} else {
+  // 3-Инструкция
+}

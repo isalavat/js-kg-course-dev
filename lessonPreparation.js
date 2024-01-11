@@ -40,3 +40,56 @@ console.log(typeof someVariable);
 1) 'бош' деп эсептелген маанилер, мисалы 0, бош сап "", null, undefined жана NaN, false болуп калат.
 2)Башка маанилер true болуп калат.
 */
+/*
+let ozgormo = 5 + 3 - 2; // 4 операнд, 3 оператор = + -
+
+let x = 1;
+x = -x; // унардык - оператору
+alert(x); // -1, унардык терс кылуу оператору иштеди
+
+let y = 1,
+  z = 3;
+alert(z - y); // 2, эки операндысы (z, y) бар
+// бинардык минус оператору аткарылды
+*/
+// Маткматикалык операторлор
+let san = 100;
+san = -san;
+console.log(san);
+
+let x = 2;
+let y = 5;
+let summa = x + y;
+console.log(summa);
+
+// + - * / % **
+
+console.log(5 % 2);
+console.log(7 % 3);
+
+console.log(2 ** 3);
+
+let s = "my" + "string";
+console.log(s);
+
+let z = "5" + 6; // 11 emes 56
+console.log(z);
+console.log(1 + 2 + "3"); // 123 emes 33
+console.log(1 + 2 - "3");
+console.log(1 + 2 - true);
+
+let n = 2;
+console.log(++n);
+console.log(n);
+
+// Салыштыруу
+console.log(5 > 2);
+console.log(5 < 6);
+console.log(3 == 3);
+console.log(4 >= 2);
+console.log(4 <= 6);
+console.log(5 == "5");
+console.log(5 === "5");
+let result = true == 1;
+result = false === 0;
+console.log(result);

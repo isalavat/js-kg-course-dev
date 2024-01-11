@@ -142,14 +142,123 @@ console.log(Number(false));
 */
 
 // Boolean алмаштыруу
+/*
 console.log(Boolean(1)); // true
 console.log(Boolean(0)); // false
 console.log(Boolean("Salam!")); // true
 console.log(Boolean("")); // false
-/*
+
 Булеан өзгөртүү эрежелери:
 1) 'бош' деп эсептелген маанилер, мисалы 0, бош сап "", null, undefined жана NaN, false болуп калат.
 2)Башка маанилер true болуп калат.
-*/
+
 console.log(Boolean("0")); // true
 console.log(Boolean(" ")); // true
+*/
+
+// Математикалык операторлор
+/*
+let san = 100;
+san = -san;
+console.log(san);
+console.log(23 + 10);
+console.log(23 - 10);
+// Операторлор + - / * ** %
+console.log(5 / 2);
+// Калдык менен болуу
+console.log(5 % 2);
+console.log(8 % 3);
+console.log(10 % 6);
+// Даржага которуу
+console.log(2 ** 2);
+console.log(3 ** 3);
+*/
+
+// Саптарды + аркылуу бириктируу
+/*
+let s = "my" + "string";
+console.log(s); // String concatenation
+let z = 1 + "3";
+console.log(z);
+console.log(1 + 2 + "4"); // 124 emes 34
+console.log("6" - 2);
+console.log("6" * "2");
+console.log("6" / "2");
+*/
+
+// Унардык + оператору аркылуу санга айландыруу
+/*
+let x = 2;
+console.log(+x); // 2
+let y = -3;
+console.log(+y);
+
+console.log(+true);
+console.log(+false);
+console.log(+"");
+let oranges = "2";
+let apples = "3";
+console.log(oranges + apples); // 23 String concat
+console.log(+oranges + +apples); // 5
+*/
+
+// Барбардык оператору =
+/*
+let x = 2 + 3 * 2;
+console.log(x);
+let b;
+console.log((b = 1 + 4));
+console.log(b);
+let a, c, d;
+a = c = d = 34 + 6; // жаман код
+console.log(a);
+console.log(c);
+console.log(d);
+// жакшыраак код
+d = 34 + 6;
+c = d;
+a = c;
+*/
+
+// Modify in place - оз ордунан манисин алмаштыруу
+/*
+let n = 2;
+n = n + 5; // 7
+console.log(n);
+let m = 3;
+m = m * 5; // 7
+console.log(m);
+
+let l = 2;
+l += 5; // l = l + 5
+let k = 3;
+k *= 5; // k = k * 5
+console.log(l);
+console.log(k);
+*/
+
+// Increment, decrement
+let i = 1;
+// postfix form
+i++; // increment - i = i + 1
+console.log(i);
+i++; // increment
+console.log(i);
+
+let k = 4;
+// postfix form
+k--; // decrement - k = k - 1;
+console.log(k);
+
+// prefix form
+let n = 6;
+++n;
+console.log(n);
+
+let counter = 8;
+let counter2 = 8;
+// posfix vs prefix
+console.log(counter++);
+console.log(++counter2);
+console.log(counter);
+console.log(counter2);
