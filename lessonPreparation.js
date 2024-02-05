@@ -53,6 +53,7 @@ alert(z - y); // 2, эки операндысы (z, y) бар
 // бинардык минус оператору аткарылды
 */
 // Маткматикалык операторлор
+/*
 let san = 100;
 san = -san;
 console.log(san);
@@ -90,6 +91,43 @@ console.log(4 >= 2);
 console.log(4 <= 6);
 console.log(5 == "5");
 console.log(5 === "5");
+
 let result = true == 1;
 result = false === 0;
 console.log(result);
+console.log("A" + "Z");
+*/
+/*
+let shart = false;
+if (undefined) {
+  console.log("Билдируу чын!");
+} else {
+  console.log("Билдируу жалган");
+}
+
+
+let birinchiSan = prompt("Birinchi san:");
+let ekinchiSan = prompt("Ekinchi san:");
+let uchuncuSan = prompt("Uchunchu san:");
+
+let alertText = "Бул сан эн чон: ";
+
+// Биринчи сан чон
+if (birinchiSan > ekinchiSan && birinchiSan > uchuncuSan) {
+  alert(alertText + birinchiSan);
+} else if (ekinchiSan > birinchiSan && ekinchiSan > uchuncuSan) {
+  alert(alertText + ekinchiSan);
+} else {
+  alert(alertText + uchuncuSan);
+} */
+
+for (let n = 1; n < 10; n++) {
+  console.log("Begin");
+  break;
+  console.log("End");
+  if (n % 2 == 0) {
+    console.log(n + " бул жуп сан");
+  } else {
+    console.log(n + " бул так сан");
+  }
+}

@@ -21,7 +21,7 @@ n = 12.345; // Болчок сан
 const bigInt = 1234567890123456789012345678901234567890n;
 
 let str = "Салам";
-let str2 = 'Бир тырмакча дагы колдонулат';
+let str2 = "Бир тырмакча дагы колдонулат";
 let phrase = `башкаларын дагы камтый алат ${str}`;
 
 let nikeluu = true; // ооба, ал никелуу
@@ -37,16 +37,15 @@ let dateOfBirth;
 let variable = "Кыргыз тили";
 const million = 1000000;
 let someVariable = 213; // Сан
-someVariable = "Бишкек" // Сап
+someVariable = "Бишкек"; // Сап
 
 // Java тилиндеги статикалык типтештируу
-int numericVariable = 323
+//int numericVariable = 323
 
 let apples = "2";
 let oranges = "3";
 // экөө тең бинардык плюс операциясына чейин сандарга айлантылат
-alert( +apples + +oranges ); // 5                                     
-
+alert(+apples + +oranges); // 5
 
 let asandynJashy = 5;
 let usondunJashy = 3;
@@ -85,4 +84,142 @@ if (shart1) {
   // 2-Инструкция
 } else {
   // 3-Инструкция
+}
+
+alert(true || true); // true
+alert(false || true); // true
+alert(true || false); // true
+alert(false || false); // false
+
+alert(true && true); // true
+alert(false && true); // false
+alert(true && false); // false
+alert(false && false); // false
+
+alert(!true); // false
+alert(!0); // true
+
+// if else жана логикалык оператор
+/*let hour = 9;
+
+if (hour < 10 || hour > 18) {
+  alert( 'Оффис жабык.' );
+}*/
+
+// if else жана логикалык оператор
+/*let hour = 12;
+let isWeekend = true;
+
+if (hour < 10 || hour > 18 || isWeekend) {
+  alert("Оффис жабык."); // Дем алыш!
+}*/
+
+/*let firstName = "";
+let lastName = "";
+let nickName = "SuperCoder";
+
+alert( firstName || lastName || nickName || "Anonymous"); // SuperCoder*/
+/*
+let hour = 12;
+let minute = 30;
+
+if (hour == 12 && minute == 30) {
+  alert("The time is 12:30");
+}
+
+if (1 && 0) {
+  // томондогудой бааланат - true && false
+  alert("Иштебейт, анткени жыйынтык жалган!");
+}
+
+alert("Циклга чейин");
+
+while (shart) {
+  // сиздин код
+  // "циклдын денеси"
+}
+
+alert("Циклдан кийин");
+
+let jalpyAralyk = 2000;
+let churkalganAralyk = 0;
+let ailampa = 500;
+alert("Старт");
+
+while (churkalganAralyk < jalpyAralyk) {
+  churkalganAralyk += ailampa;
+  alert(churkalganAralyk);
+}
+
+alert("Финиш");
+
+for (begin; condition; step) {
+  // ... loop body ...
+}
+
+let i = 0;
+
+for (i = 0; i < 3; i++) {
+  // use an existing variable
+  alert(i); // 0, 1, 2
+}
+
+alert(i); // 3, visible, because declared outside of the loop
+*/
+/*
+// Бул жерде жума күнүнүн аты дайындалган өзгөрмө
+let kun = "Шейшемби";
+
+// switch жарыясы kun өзгөрмөсүнүн маанисин текшерет
+switch (kun) {
+  case "Дүйшөмбү": // Эгерде kun "Дүйшөмбү" болсо
+    console.log("Жумуштун биринчи күнү");
+    break; // break менен бул блоктон чыгабыз
+  case "Шейшемби": // Эгерде kun "Шейшемби" болсо
+    console.log("Жумуштун экинчи күнү");
+    break; // бул жерден чыгабыз
+  // КОД АТЙЫЛАП КЫСКАРТЫЛДЫ
+  case "Жекшемби": // Эгерде kun "Жекшемби" болсо
+    console.log("Дем алыштын экинчи күнү");
+    break; // бул жерден чыгабыз
+  default: // Эгерде башка эч кандай case туура келбесе
+    console.log("Мындай күн жок");
+    // default блогу ар дайым switch жарыясынын аягында жазылат
+}
+
+
+// Бул код kun өзгөрмөсүнүн маанисине жараша белгилүү бир текстти чыгарат.
+
+
+
+let month = "August";
+
+if (month === "December" || month === "January" || month === "February") {
+  console.log("Кыш мезгили");
+} else if (month === "March" || month === "April" || month === "May") {
+  console.log("Жаз мезгили");
+} else if (month === "June" || month === "July" || month === "August") {
+  console.log("Жай мезгили");
+} else if (month === "September" || month === "October" || month === "November") {
+  console.log("Күз мезгили");
+} else {
+  console.log("Мындай ай жок");
+}
+*/
+let month = "August";
+
+switch (month) {
+  case "December":
+  case "January":
+  case "February":
+    console.log("Кыш мезгили");
+    break;
+  case "March":
+  case "April":
+  case "May":
+    console.log("Жаз мезгили");
+    break;
+  // код кыскартылган
+  default:
+    console.log("Мындай ай жок");
 }

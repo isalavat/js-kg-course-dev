@@ -236,7 +236,7 @@ k *= 5; // k = k * 5
 console.log(l);
 console.log(k);
 */
-
+/*
 // Increment, decrement
 let i = 1;
 // postfix form
@@ -262,3 +262,145 @@ console.log(counter++);
 console.log(++counter2);
 console.log(counter);
 console.log(counter2);
+*/
+
+// Cандарды салыштыруу
+/*
+console.log(5 > 3);
+console.log(4 < 2);
+console.log(6 == 6);
+console.log(10 != 12);
+console.log(13 >= 10);
+console.log(18 <= 17);
+let resultOfComparison = 5 == 4;
+console.log(typeof resultOfComparison);
+*/
+// Ар кайсы типтеги маанилерди салыштыруу
+/*
+console.log(true == 1);
+console.log(false == 0);
+console.log(true === 1);
+console.log(true === true);
+*/
+// Саптарды салыштыруу
+/*
+console.log("A" > "Z"); // Unicode A - 65, Z - 90
+console.log("Azat" > "Azat test");
+*/
+/*
+let isTrue = 5 > 4;
+if (null) {
+  console.log("Билдируу чын!");
+} else {
+  console.log("Билдируу жалган!");
+}
+*/
+// if else шарттуу оператору
+/*
+let isExpressionTrue = 6 == 6;
+if (isExpressionTrue) {
+  console.log("Bildiruu chyn!");
+} else {
+  console.log("Bildiruu jalgan!");
+} */
+/*
+let independenceYear = prompt("Кыргызстан эгемендуулукту качан алган?");
+
+if (independenceYear == 1991) {
+  alert("Сиздин жооп туура!");
+} else {
+  alert("Жооп туура эмес!");
+}*/
+/*
+let birinchiSan = +prompt("Birinchi sandy kirigiziniz!");
+let ekinchiSan = +prompt("Ekinchi sandy kirigiziniz!");
+
+if (birinchiSan > ekinchiSan) {
+  alert("Birinchi san " + birinchiSan + ", ekinchi sandan chong " + ekinchiSan);
+} else if (ekinchiSan > birinchiSan) {
+  alert(
+    "Ekinchi san " + ekinchiSan + ", birinchi sandan " + birinchiSan + " chong"
+  );
+} else {
+  alert("Eki san barabar!");
+}*/
+
+// логикалык операторлор
+/*
+let jash = 25;
+let aidoochulukKubolukBar = true;
+let koruusuJakshy = true;
+let charchdyby = true;
+
+// ЖАНА оператору
+if (jash >= 18 && aidoochulukKubolukBar && koruusuJakshy && !charchdyby) {
+  alert("Бул адам унааны айдаса болот!!!");
+} else {
+  alert("Бул адам унаа айдаса болбойт!!!");
+}
+
+// ЖЕ оператору
+let kozAinekTagyshyKerek = !koruusuJakshy || charchdyby;
+if (kozAinekTagyshyKerek) {
+  alert("Бул адам коз айнек тагышы керек!!!");
+} else {
+  alert("Бул адам коз айнек такпай эле койсо болот!!");
+}*/
+
+// уч сандын кайсынысы чон
+/*
+let a = prompt("Биринчи санды киргиз!");
+let b = prompt("Экинчи санды киргиз!");
+let c = prompt("Учунчу санды киргиз!");
+
+// Рефакторинг
+const alertText = "Эн сон сан: ";
+
+if (a > b && a > c) {
+  alert(alertText + a);
+} else if (b > a && b > c) {
+  alert(alertText + b);
+} else if (c > a && c > b) {
+  alert(alertText + c);
+} else {
+  alert("Уч сан бири бирине барабар!");
+}
+*/
+
+//console.log(true && (true || false) && true);
+
+// Циклдар
+/*
+let kadam = 0;
+console.log("Башы");
+
+while (kadam < 5) {
+  // Цикл денеси
+  kadam++;
+  console.log("Бобоктун " + kadam + "-кадамы!😊");
+}
+
+console.log("Аягы"); */
+/*
+for (let i = 1; i < 10; i++) {
+  let jupSanby = i % 2 == 0;
+  // continue, break
+
+  //console.log("Before continue");
+  //break;
+  //console.log("After continue");
+
+  if (jupSanby) {
+    console.log(i + " бул жуп сан!");
+  } else {
+    //continue;
+    console.log(i + " бул так сан!");
+  }
+} */
+
+let i = 3;
+
+do {
+  console.log(i);
+  i--;
+} while (i > 1);
