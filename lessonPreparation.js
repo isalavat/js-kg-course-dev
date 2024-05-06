@@ -120,7 +120,7 @@ if (birinchiSan > ekinchiSan && birinchiSan > uchuncuSan) {
 } else {
   alert(alertText + uchuncuSan);
 } */
-
+/*
 for (let n = 1; n < 10; n++) {
   console.log("Begin");
   break;
@@ -131,3 +131,10 @@ for (let n = 1; n < 10; n++) {
     console.log(n + " бул так сан");
   }
 }
+*/
+
+function sayHello() {
+  console.log("Hello!");
+}
+
+sayHello();

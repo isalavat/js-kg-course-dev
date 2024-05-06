@@ -397,10 +397,123 @@ for (let i = 1; i < 10; i++) {
     console.log(i + " бул так сан!");
   }
 } */
-
+/*
 let i = 3;
 
 do {
   console.log(i);
   i--;
 } while (i > 1);
+*/
+
+// Функциялар. Локалдык, глобалдык озгормолор жана аргумент
+/*
+//sayHello();
+//let name = "Айбек"; // глобалдык озгормо
+function sayHello(nameArg) {
+  // let name = "Айбек"; // жергиликтуу озгормо
+  console.log("Салам " + nameArg);
+}
+
+//console.log(name);
+
+sayHello("Айгул");
+sayHello("Айбек");
+sayHello("Акылай");
+*/
+/*
+function passportAlsaBolobu(jashKurak) {
+  if (jashKurak >= 16) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+let jash = prompt("Сиздин жашыныз канчада?");
+let result = passportAlsaBolobu(jash);
+if (result) {
+  alert("Паспорт алса болот!");
+} else {
+  alert("Паспорт алса болбойт!");
+} */
+/*
+function funcA() {
+  console.log("A");
+  funcB();
+}
+
+function funcB() {
+  console.log("B");
+  funcC();
+}
+
+function funcC() {
+  console.log("C");
+}
+
+funcA();
+*/
+
+// Hoisting
+/*
+sayHello();
+
+// Function declaration - функция жарыясы
+function sayHello() {
+  console.log("Salam!");
+}
+// Function expression - функция билдируусу
+let sayHello2 = function () {
+  console.log("Salam!");
+};
+
+sayHello2();
+*/
+
+// Функция аргумент катары
+/*
+function surooUzat(suroo, ooba, jok) {
+  if (confirm(suroo)) {
+    ooba();
+  } else {
+    jok();
+  }
+}
+
+function oobanyKorgoz() {
+  alert("Siz makul boldunuz");
+}
+
+function joktuKorgoz() {
+  alert("Siz makul bolgon joksuz");
+}
+
+surooUzat("Siz makulsuzbu?", oobanyKorgoz, joktuKorgoz);
+*/
+// Жебе функциясы - arrows function
+let sum = function (a, b) {
+  let result = a + b;
+  return result;
+};
+
+let sum2 = (a, b) => {
+  let result = a + b;
+  return result;
+};
+
+let sum3 = (a, b) => a + b;
+
+function surooUzat(suroo, ooba, jok) {
+  if (confirm(suroo)) {
+    ooba();
+  } else {
+    jok();
+  }
+}
+
+surooUzat(
+  "Siz makulsuzbu?",
+  () => alert("Siz makul boldunuz"), // анонимдуу функция
+  () => alert("Siz makul bolgon joksuz") // анонимдуу функция
+);

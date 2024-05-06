@@ -223,3 +223,14 @@ switch (month) {
   default:
     console.log("Мындай ай жок");
 }
+
+function koshuu(a, b) {
+  let summa = a + b;
+  return summa;
+}
+
+let result = koshu(5, 7);
+
+console.log(result); // 12 деп чыгарат
+
+console.log(koshu(2, 2)); // 4 деп чыгарат
