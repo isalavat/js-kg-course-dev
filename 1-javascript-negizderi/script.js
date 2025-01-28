@@ -492,6 +492,7 @@ function joktuKorgoz() {
 surooUzat("Siz makulsuzbu?", oobanyKorgoz, joktuKorgoz);
 */
 // Жебе функциясы - arrows function
+/*
 let sum = function (a, b) {
   let result = a + b;
   return result;
@@ -517,3 +518,196 @@ surooUzat(
   () => alert("Siz makul boldunuz"), // анонимдуу функция
   () => alert("Siz makul bolgon joksuz") // анонимдуу функция
 );
+let alertMessage = "Операциялардын жыйынтыгы:";
+doMathOperations(2, 3);
+
+// Математикалык амалдарды аткаруу
+function doMathOperations(a, b) {
+  let sum = a + b;
+  let substraction = a - b;
+  let division = a / b;
+  let multiplication = a * b;
+  alertResultsOFMathOperations(sum, substraction, division, multiplication);
+}
+// Жыйынтыкты чыгаруу
+function alertResultsOFMathOperations(
+  sum,
+  substraction,
+  division,
+  multiplication
+) {
+  alert(alertMessage);
+  alert("Сумма - " + sum);
+  alert("Кемитуу - " + substraction);
+  alert("Болуу - " + division);
+  alert("Кобойтуу - " + multiplication);
+}*/
+
+// Объектилер
+/*
+const age = 27;               // number
+const isMarried = false;      // boolean
+const firstName = "Salavat";  // String
+const children = null;        // null
+const weight;                 // undefined
+const welth = 3000000000000n  // BigInt
+*/
+/*
+let telegramAccount = {}; // empty object
+const facebookAccount = new Object(); // empty object
+
+let instagramAccount = {
+  login: "islamov",
+  password: "Qwerty123",
+  age: 27,
+  isVerified: false,
+  "is private": true,
+  address: {
+    country: "Germany",
+    city: "Chemntz",
+  },
+  sayHello: () => console.log("Salam!!!"),
+};
+
+console.log(instagramAccount.login);
+console.log(instagramAccount.address.country);
+instagramAccount.sayHello();
+console.log(instagramAccount["is private"]);
+
+instagramAccount.yearOfRegistration = "2022";
+delete instagramAccount.address;
+console.log(instagramAccount);
+
+// Funktionyn jaradamy menen objektini jasoo
+function createUser(userName, userAge) {
+  return {
+    name: userName,
+    age: userAge,
+  };
+}
+
+let user = createUser("Bobotik", "3");
+console.log(user);
+
+console.log("age" in instagramAccount);
+
+// for in
+/*
+for (let property in instagramAccount) {
+  console.log("Property Name -> " + property);
+  console.log("Property Value -> " + instagramAccount[property]);
+}
+
+for (let key in console) {
+  console.log("Oigonuu -> " + console[key]);
+}*/
+/*
+let user = { name: "John" };
+let admin = user;
+admin.name = "Askar";
+console.log(user.name);
+console.log(admin.name);
+
+let a = {};
+let b = a;
+
+console.log(a == b);
+console.log(a === b);
+
+let c = {};
+let d = {};
+
+console.log(c == d);
+
+const user2 = { name: "Asan" };
+user2.name = "Uson";
+console.log(user2.name);
+
+user2 = {};*/
+/*
+// Objektterdi kochuruu
+let user = { name: "John" };
+
+let permission1 = {
+  // Uruksat
+  canView: true,
+};
+
+let permission2 = {
+  canEdit: false,
+};
+
+Object.assign(user, permission1, permission2);
+
+permission1.canView = false;
+permission2.canEdit = true;
+
+console.log(user);
+
+Object.assign(user, { name: "Askar" });
+console.log(user);
+
+let admin = Object.assign({}, user);
+console.log(admin); */
+/*
+let user = {
+  name: "John",
+  olchomdoru: {
+    boiUzundugu: 180,
+    salmagy: 75,
+  },
+};
+
+let clone = Object.assign({}, user);
+//console.log(clone == user); //false
+//console.log(clone.olchomdoru == user.olchomdoru); //true
+
+// Strukturalyk kochuruu
+let clone2 = structuredClone(user);
+console.log(clone2 == user); //false
+console.log(clone2.olchomdoru == user.olchomdoru); //false
+*/
+
+// Objektinin metoddoru jana "this"
+/*
+let user = {
+  name: "Asan",
+  age: 22,
+  salamAit: function () {
+    console.log(
+      "Salam, meinin atym " + this.name + ", menin jashym " + this.age
+    );
+  },
+};
+// OOP
+user.salamAit();
+let admin = user;
+admin.salamAit();
+user = null;
+admin.salamAit(); 
+
+let user = { name: "Asan" };
+let admin = { name: "Uson" };
+
+function salamAit() {
+  console.log(this.name);
+}
+
+user.sayHi = salamAit;
+admin.sayHello = salamAit;
+user.sayHi();
+admin.sayHello();
+*/
+
+function User(paramName) {
+  // this anyktalat js taraptan
+  this.name = paramName;
+  this.isAdmin = false;
+  this.sayHi = function () {
+    console.log("Salam, bul men " + this.name);
+  };
+}
+
+let user = new User("Kairat");
+let admin = new User("Admin");
+user.sayHi();

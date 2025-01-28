@@ -1,3 +1,4 @@
+/*
 let message;
 
 message = "Салам!";
@@ -206,6 +207,7 @@ if (month === "December" || month === "January" || month === "February") {
   console.log("Мындай ай жок");
 }
 */
+/*
 let month = "August";
 
 switch (month) {
@@ -234,3 +236,57 @@ let result = koshu(5, 7);
 console.log(result); // 12 деп чыгарат
 
 console.log(koshu(2, 2)); // 4 деп чыгарат
+*/
+
+let message = "Hello!";
+let phrase = message;
+
+let user = { name: "John" };
+
+let admin = user; // шилтемени корчуруу
+
+admin.name = "Pete"; // "admin" шилтемеси аркылуу озгортулду
+
+alert(user.name); // 'Pete', озгоруулор "user" шилтемесина дагы корунот
+
+function marry(man, woman) {
+  woman.husband = man;
+  man.wife = woman;
+
+  return {
+    father: man,
+    mother: woman,
+  };
+}
+
+let family = marry(
+  {
+    name: "John",
+  },
+  {
+    name: "Ann",
+  }
+);
+
+delete family.father;
+delete family.mother.husband;
+
+family = null;
+
+// let okuuchular = []; // бош массив
+//индекстоо:   0       1         2         3          4        5
+let okuuchular = ["Асан", "Актан", "Акылай", "Жармагул", "Эшмат", "Ташмат"];
+
+console.log(okuuchular); // 'Асан', 'Актан', 'Акылай', 'Жармагул', 'Эшмат', 'Ташмат'
+
+console.log(okuuchular[0]); // Асан - 0-индексчен элемент
+
+console.log(okuuchular[3]); // Жармагул
+
+okuuchular.splice(2, 1); // Акылай массивден очуруу
+
+console.log(okuuchular.length); // 5 - элементтердин саны
+
+okuuchular.push("Адылбек"); // Адылбекти массивке кошуу
+
+console.log(okuuchular); // 'Асан', 'Актан', 'Жармагул', 'Эшмат', 'Ташмат', 'Адылбек'
