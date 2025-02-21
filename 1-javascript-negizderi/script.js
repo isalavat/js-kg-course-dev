@@ -698,7 +698,7 @@ admin.sayHello = salamAit;
 user.sayHi();
 admin.sayHello();
 */
-
+/*
 function User(paramName) {
   // this anyktalat js taraptan
   this.name = paramName;
@@ -711,3 +711,88 @@ function User(paramName) {
 let user = new User("Kairat");
 let admin = new User("Admin");
 user.sayHi();
+*/
+
+// Arrays
+//let arr = new Array();
+//let arr = ["Asan", "Uson"];
+//  0        1         2
+/*
+let fruits = ["Alma", "Apelsin", "Alcha"];
+console.log(fruits[0]);
+console.log(fruits[1]);
+fruits[2] = "Shabdaly";
+fruits[3] = "Oruk";
+console.log(fruits);
+
+// Arrays tipterdi aralashtyruu
+let arr = [
+  "Alma",
+  true,
+  { name: "Asan" },
+  function () {
+    console.log("Salam!!");
+  },
+];
+console.log(arr[2].name);
+arr[3]();
+
+console.log(fruits.length);
+console.log(fruits[fruits.length - 1]);
+console.log(fruits.at(0));
+console.log(fruits.at(-1));
+*/
+/*
+let massiv = [2, 3, 4];
+massiv[3] = 5;
+console.log(massiv);
+// push, pop
+massiv.push(6);
+console.log(massiv);
+let lastElement = massiv.pop();
+console.log(lastElement);
+console.log(massiv);
+// shift, unshift
+let firstElement = massiv.shift();
+console.log(firstElement);
+console.log(massiv);
+massiv.unshift(0);
+console.log(massiv);
+*/
+// Tsikyldar arkyluu massivterdin elementetterine kairyluu
+/*
+let sandar = [1, 2, 3, 4, 5, 6, 7];
+
+for (let i = 0; i < sandar.length; i++) {
+  console.log(sandar[i] + "- orun kut bolsun!!!");
+}
+
+for (let san of sandar) {
+  console.log(san);
+}
+
+for (let i = sandar.length - 1; i >= 0; i--) {
+  console.log(sandar[i] + "- orun kut bolsun!!!");
+}*/
+
+let users = [
+  { name: "Asan", age: 24 },
+  { name: "Uson", age: 12 },
+  { name: "Aigul", age: 23 },
+  { name: "Aizhan", age: 36 },
+];
+
+for (let user of users) {
+  // shart
+  // 24 % 12 = 0
+  // 13 % 12 = 1;
+  if (user.age % 12 == 0) {
+    console.log(
+      "Salam, " +
+        user.name +
+        ", " +
+        user.age +
+        " mucholuu jash kurak kut bolsun"
+    );
+  }
+}

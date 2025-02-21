@@ -342,9 +342,31 @@ admin.f();
 //
 //let arr = new Array();
 //let arr = [];
+/*
 let fruits = ["Alma", "Apelsin", "Alcha"];
 console.log(fruits[0]);
 console.log(fruits[1]);
 
 fruits[2] = "Shabdaly";
 console.log(fruits[2]);
+
+// mix of values
+let arr = [
+  "Alma",
+  { name: "Asan" },
+  true,
+  function () {
+    console.log("Salam");
+  },
+];
+
+console.log(arr[1].name);
+console.log(arr[3]());
+
+console.log(fruits.length);
+fruits[3] = "Almurut";
+console.log(fruits[fruits.length - 1]);
+console.log(fruits.at(-1));
+*/
+
+let massiv = [2, 3, 4];
